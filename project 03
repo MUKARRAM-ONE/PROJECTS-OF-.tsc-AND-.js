@@ -1,0 +1,9 @@
+
+// Store the person's name in a variable
+let personName = "eric";
+
+// Print in lowercase
+console.log(personName.toLowerCase());
+
+// Print in uppercase
+console.log(personName.toUpperCase());
