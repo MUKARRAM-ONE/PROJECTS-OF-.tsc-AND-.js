@@ -1,9 +1,36 @@
 
-// Store the person's name in a variable
-let personName = "eric";
+// Store the string in any variable 
+let scentence: string = "Learning typescript is easy." ;
 
 // Print in lowercase
-console.log(personName.toLowerCase());
+console.log(scentence.toLowerCase());
 
 // Print in uppercase
-console.log(personName.toUpperCase());
+console.log(scentence.toUpperCase());
+
+// Print in title case
+console.log(toTitleCase(scentence));
+
+// Function to convert string to title case
+function toTitleCase(str: string): string 
+{
+    return str.replace(/\b\w\S*/g, function(txt)
+     {
+       return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+}
+
+
+
+Output look like this:
+lowercase:
+
+learning typescript is easy.
+
+uppercase:
+LEARNING TYPESCRIPT IS EASY.
+
+title case:
+Learning Typescript Is Easy.
+
+
