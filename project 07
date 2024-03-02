@@ -1,0 +1,45 @@
+Number Eight: Write addition, subtraction, multiplication, and division operations
+that each result in the number 8. Be sure to enclose your operations in print
+statements to see the results.
+
+
+Solution:
+
+Code:
+
+// Addition
+var a : number = 5;
+var b : number = 3;
+let addition: number = a + b
+console.log(`Addition of two numbers ${a} + ${b} = `, addition); // Output: 8
+
+// Subtraction
+var a : number = 10;
+var b : number = 2;
+let substraction: number = a - b
+console.log(`Substraction of two numbers ${a} - ${b} = `, substraction); // Output: 8
+
+
+// Multiplication
+var a : number = 4;
+var b : number = 2;
+let multiplication: number = a * b
+console.log(`Multiplication of two numbers ${a} * ${b} = `, multiplication); // Output: 8
+
+
+// Division
+var a : number = 16;
+var b : number = 2;
+let division: number = a / b
+console.log(`Division of two numbers ${a} / ${b} = `, division); // Output: 8
+
+
+----------------------------------------------------------------------------------------------------------------
+only for reading purpose:
+
+Output look like this:
+Addition of two numbers 5 + 3 =  8
+Substraction of two numbers 10 - 2 =  8 
+Multiplication of two numbers 4 * 2 =  8
+Division of two numbers 16 / 2 =  8  
+
