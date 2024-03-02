@@ -1,0 +1,17 @@
+You should create four lines that look like this:
+
+console.log(5 + 3)
+
+Your output should simply be four lines with the number 8 appearing once on each line.
+
+// Addition
+console.log("Addition:\n 5 + 3 =", 5 + 3); // Output: 8
+
+// Subtraction
+console.log("Subtraction:\n 10 - 2 =", 10 - 2); // Output: 8
+
+// Multiplication
+console.log("Multiplication:\n 4 * 2 =", 4 * 2); // Output: 8
+
+// Division
+console.log("Division:\n 16 / 2 =", 16 / 2); // Output: 8
