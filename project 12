@@ -1,0 +1,33 @@
+Question 12:
+ Greetings: Start with the array you used in Exercise 11,
+ but instead of just printing each person’s name,
+ print a message to them. The text of each message
+should be the same, but each message should be personalized with the person’s name.
+
+
+Solution:
+Code:
+
+// Store the names of your friends in an array called names
+let names: string[] = ["Asad", "Umer", "Haider", "Ali", "Amjad", "Waqas"];
+
+let message : string = ", Do you like to play in our hockey's team or opponenet's team."
+
+// Print each person's name by accessing each element in the list one at a time
+for (let i = 0; i < names.length; i++) 
+{
+    console.log(names[i] +" "+ message);
+}
+
+
+
+--------------------------------------------------------------------------------------------
+only for reading Purpose:
+Output look like this:
+
+Asad , Do you like to play in our hockey's team or opponenet's team.
+Umer , Do you like to play in our hockey's team or opponenet's team.  
+Haider , Do you like to play in our hockey's team or opponenet's team.
+Ali , Do you like to play in our hockey's team or opponenet's team.   
+Amjad , Do you like to play in our hockey's team or opponenet's team. 
+Waqas , Do you like to play in our hockey's team or opponenet's team. 
