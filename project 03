@@ -20,6 +20,22 @@ function toTitleCase(str: string): string
     });
 }
 
+/*
+function titleCase(personname :string)
+{
+let name;
+name = personname.toLowerCase().split(" ")
+for (let i = 0;i < name.length;i++)
+{
+
+     name[i] = name[i].charAt(0).toUpperCase() + name[i].slice(1);
+
+}
+return name.join(" ");
+}
+
+console.log(`TitleCase: ${titleCase("Muhammad Ammad Amir")}`);
+*/
 
 
 Output look like this:
