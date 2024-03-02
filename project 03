@@ -34,7 +34,7 @@ for (let i = 0;i < name.length;i++)
 return name.join(" ");
 }
 
-console.log(`TitleCase: ${titleCase("Muhammad Ammad Amir")}`);
+console.log(`TitleCase: ${titleCase("MUKARRAM RAZZAQ")}`);
 */
 
 
