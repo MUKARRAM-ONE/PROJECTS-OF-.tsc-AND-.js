@@ -7,4 +7,47 @@ Solution:
 There are two types of comments single line comments and multiples lines comments 
 here i will use both types of commemt in my program.
 
+note:
+comments are not compiled by the compiler.
+
+
 Lets the program code:
+
+// Store the string in any variable 
+let scentence: string = "Learning typescript is easy." ;
+
+// Print in lowercase
+console.log(scentence.toLowerCase());
+
+// Print in uppercase
+console.log(scentence.toUpperCase());
+
+// Print in title case
+console.log(toTitleCase(scentence));
+
+// Function to convert string to title case
+function toTitleCase(str: string): string 
+{
+    return str.replace(/\b\w\S*/g, function(txt)
+     {
+       return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+}
+
+/*
+function titleCase(personname :string)
+{
+let name;
+name = personname.toLowerCase().split(" ")
+for (let i = 0;i < name.length;i++)
+{
+
+     name[i] = name[i].charAt(0).toUpperCase() + name[i].slice(1);
+
+}
+return name.join(" ");
+}
+
+console.log(`TitleCase: ${titleCase("MUKARRAM RAZZAQ")}`);
+*/
+
