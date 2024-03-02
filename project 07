@@ -33,6 +33,22 @@ var b : number = 2;
 let division: number = a / b
 console.log(`Division of two numbers ${a} / ${b} = `, division); // Output: 8
 
+or another code:
+
+
+// Addition
+console.log("Addition:\n 5 + 3 =", 5 + 3); // Output: 8
+
+// Subtraction
+console.log("Subtraction:\n 10 - 2 =", 10 - 2); // Output: 8
+
+// Multiplication
+console.log("Multiplication:\n 4 * 2 =", 4 * 2); // Output: 8
+
+// Division
+console.log("Division:\n 16 / 2 =", 16 / 2); // Output: 8
+
+
 
 ----------------------------------------------------------------------------------------------------------------
 only for reading purpose:
