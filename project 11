@@ -1,0 +1,21 @@
+Question 11:
+Names: Store the names of a few of your friends in a array called names.
+Print each person’s name by accessing each element in the list, one at a time.
+
+Solution:
+Code:
+
+// Store the names of your friends in an array called names
+let names: string[] = ["Asad", "Umer", "Haider", "Ali", "Amjad", "Waqas"];
+
+
+// Print each person's name by accessing each element in the list one at a time
+for (let i = 0; i < names.length; i++) 
+{
+    console.log(names[i]);
+}
+
+
+-------------------------------------------------------------------------------------------
+only for reading purpose:
+Output look like this:
