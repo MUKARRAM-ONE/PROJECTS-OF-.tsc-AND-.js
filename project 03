@@ -1,3 +1,9 @@
+Question 03:
+Name Cases: Store a person’s name in a variable, and then print that person’s
+name in lowercase, uppercase, and titlecase.
+
+Solution:
+Code:
 
 // Store the string in any variable 
 let scentence: string = "Learning typescript is easy." ;
@@ -38,6 +44,8 @@ console.log(`TitleCase: ${titleCase("MUKARRAM RAZZAQ")}`);
 */
 
 
+---------------------------------------------------------------------------------------------------------
+Only for reading purpose:
 Output look like this:
 lowercase:
 
