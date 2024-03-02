@@ -1,0 +1,49 @@
+Question 13:
+our Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list
+to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
+
+
+Solution:
+Code:
+
+
+
+// Define an array to store several examples of your favorite mode of transportation
+let transportation: string[] = ["Honda motorcycle", "Tesla car", "Boeing airplane"];
+
+// Print a series of statements about these items
+for (let i = 0; i < transportation.length; i++) {
+    console.log(`I would like to own a ${transportation[i]}.`);
+}
+
+// Define an array to store different types of sports cars
+let sportsCars: { company: string, model: string }[] = [
+    { company: "Bugatti", model: "Chiron" },
+    { company: "BMW", model: "M Series" },
+    { company: "Lamborghini", model: "Aventador" },
+    { company: "Ferrari", model: "488 GTB" },
+    { company: "Mercedes", model: "AMG GT" },
+    { company: "Audi", model: "R8" }
+];
+
+// Print details of each sports car
+console.log("Details of Sports Cars:");
+sportsCars.forEach(car => {
+    console.log(`- ${car.company} ${car.model}`);
+});
+
+
+---------------------------------------------------------------------------------------
+only for reading purpose
+out put look like this:
+
+I would like to own a Honda motorcycle.
+I would like to own a Tesla car.      
+I would like to own a Boeing airplane.
+Details of Sports Cars:
+- Bugatti Chiron
+- BMW M Series
+- Lamborghini Aventador
+- Ferrari 488 GTB
+- Mercedes AMG GT
+- Audi R8
