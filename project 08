@@ -4,14 +4,26 @@ console.log(5 + 3)
 
 Your output should simply be four lines with the number 8 appearing once on each line.
 
+
+Solution:
+code:
 // Addition
-console.log("Addition:\n 5 + 3 =", 5 + 3); // Output: 8
+console.log(5 + 3); // Output: 8
 
 // Subtraction
-console.log("Subtraction:\n 10 - 2 =", 10 - 2); // Output: 8
+console.log(10 - 2); // Output: 8
 
 // Multiplication
-console.log("Multiplication:\n 4 * 2 =", 4 * 2); // Output: 8
+console.log(4 * 2); // Output: 8
 
 // Division
-console.log("Division:\n 16 / 2 =", 16 / 2); // Output: 8
+console.log(16 / 2); // Output: 8
+
+
+-------------------------------------------------------------------------------------------------------------
+only for reading purpose not the part of the code.
+Output look like this:
+8
+8
+8
+8
