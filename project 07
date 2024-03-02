@@ -1,3 +1,4 @@
+Question 07:
 Number Eight: Write addition, subtraction, multiplication, and division operations
 that each result in the number 8. Be sure to enclose your operations in print
 statements to see the results.
@@ -35,7 +36,7 @@ console.log(`Division of two numbers ${a} / ${b} = `, division); // Output: 8
 
 or another code:
 
-
+/*
 // Addition
 console.log("Addition:\n 5 + 3 =", 5 + 3); // Output: 8
 
@@ -47,13 +48,13 @@ console.log("Multiplication:\n 4 * 2 =", 4 * 2); // Output: 8
 
 // Division
 console.log("Division:\n 16 / 2 =", 16 / 2); // Output: 8
-
+*/
 
 
 ----------------------------------------------------------------------------------------------------------------
 only for reading purpose:
-
 Output look like this:
+
 Addition of two numbers 5 + 3 =  8
 Substraction of two numbers 10 - 2 =  8 
 Multiplication of two numbers 4 * 2 =  8
