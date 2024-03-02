@@ -1,1 +1,20 @@
+Favorite Number: Store your favorite number in a variable. Then, using that variable,
+create a message that reveals your favorite number. Print that message.
+
+Solution:
+
+
+code:
+
+var fav_num = 9;
+let message;
+message = `My Favourite Number Is ${fav_num}`;
+console.log(message);
+
+
+------------------------------------------------------------------------------------------------
+only for reading purpose
+Output look like this:
+
+My Favourite Number Is 9
 
