@@ -1,0 +1,60 @@
+Question 14 , 15
+
+ Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to
+invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
+
+Changing Guest List: You just heard that one of your guests can’t make the
+dinner, so you need to send out a new set of invitations. You’ll have to think of
+someone else to invite.
+
+• Start with your program from Exercise 14. Add a print statement at the
+end of your program stating the name of the guest who can’t make it.
+
+• Modify your list, replacing the name of the guest who can’t make it with
+the name of the new person you are inviting.
+
+• Print a second set of invitation messages, one for each person who is still
+in your list.
+
+
+Solution:
+Code:
+// Define an array to store the names of people you'd like to invite to dinner
+let guestList: string[] = ["Albert Einstein", "Leonardo da Vinci", "Marie Curie"];
+
+// Print a message inviting each person to dinner
+guestList.forEach(guest => {
+    console.log(`Dear ${guest}, you are invited to dinner. Please join us for a wonderful evening.`);
+});
+// Print the name of the guest who can't make it
+let guestWhoCantMakeIt: string = "Leonardo da Vinci";
+console.log(`Unfortunately, ${guestWhoCantMakeIt} can't make it to dinner.`);
+
+// Modify the guest list to replace the guest who can't make it with a new guest
+let indexOfGuestWhoCantMakeIt: number = guestList.indexOf(guestWhoCantMakeIt);
+if (indexOfGuestWhoCantMakeIt !== -1) {
+    guestList.splice(indexOfGuestWhoCantMakeIt, 1, "Isaac Newton"); // Replace with Isaac Newton
+}
+
+// Print a second set of invitation messages for each person who is still on the list
+console.log("\nSecond Set of Invitation Messages:");
+guestList.forEach(guest => {
+    console.log(`Dear ${guest}, you are still invited to dinner. Please join us for a wonderful evening.`);
+});
+
+
+
+-------------------------------------------------------------------------
+only for reading purpose 
+Output look like this:
+Dear Albert Einstein, you are invited to dinner. Please join us for a wonderful evening.
+Dear Leonardo da Vinci, you are invited to dinner. Please join us for a wonderful evening.
+Dear Marie Curie, you are invited to dinner. Please join us for a wonderful evening.
+
+Unfortunately, Leonardo da Vinci can't make it to dinner.
+
+Second Set of Invitation Messages:
+Dear Albert Einstein, you are still invited to dinner. Please join us for a wonderful evening.
+Dear Isaac Newton, you are still invited to dinner. Please join us for a wonderful evening.
+Dear Marie Curie, you are still invited to dinner. Please join us for a wonderful evening.
+
