@@ -1,0 +1,43 @@
+Question 19:
+ Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number
+of people you are inviting to dinner.
+
+solution:
+code:
+// Start with the guest list from Exercise 16
+let guestList: string[] = ["Nikola Tesla", "Albert Einstein", "Galileo Galilei", "Leonardo da Vinci", "Marie Curie", "Isaac Newton", "Ada Lovelace"];
+
+// Print a message indicating the number of people you are inviting to dinner
+console.log(`I am inviting ${guestList.length} people to dinner.`);
+
+// Print a message saying that you can invite only two people for dinner
+console.log("Unfortunately, the new dinner table won't arrive in time, and we can only invite two people for dinner.");
+
+// Remove guests from the list until only two names remain
+while (guestList.length > 2) {
+    let removedGuest: string = guestList.pop();
+    console.log(`Sorry, ${removedGuest}, we can't invite you to dinner.`);
+}
+
+// Print a message to each of the two people still on your list, letting them know they're still invited
+console.log("\nRemaining Guests Invited:");
+guestList.forEach(guest => {
+    console.log(`Dear ${guest}, you are still invited to dinner. Please join us for a wonderful evening.`);
+});
+
+--------------------------------------------------------------------------------------
+only for reading purpose:
+output look like this:
+
+I am inviting 7 people to dinner.
+Unfortunately, the new dinner table won't arrive in time, and we can only invite two people for dinner.
+Sorry, Ada Lovelace, we can't invite you to dinner.
+Sorry, Isaac Newton, we can't invite you to dinner.
+Sorry, Marie Curie, we can't invite you to dinner.
+Sorry, Leonardo da Vinci, we can't invite you to dinner.
+Sorry, Galileo Galilei, we can't invite you to dinner.
+
+Remaining Guests Invited:
+Dear Nikola Tesla, you are still invited to dinner. Please join us for a wonderful evening.
+Dear Albert Einstein, you are still invited to dinner. Please join us for a wonderful evening.
+
