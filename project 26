@@ -1,0 +1,46 @@
+
+ Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and
+write an if-else chain.
+
+• If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
+
+• If the alien’s color isn’t green, print a statement that the player just earned 10 points.
+
+• Write one version of this program that runs the if block and another that runs the else block.
+
+
+solution 
+code
+
+// Import the inquirer module
+import inquirer from 'inquirer';
+
+// Define questions for the user
+const questions = [
+    {
+        type: 'list',
+        name: 'alienColor',
+        message: 'Select the alien color:',
+        choices: ['green', 'yellow', 'red', 'any other']
+    }
+];
+
+// Use inquirer to prompt the user for input
+inquirer.prompt(questions)
+    .then(answers => {
+        // Check if the alien's color is green
+        if (answers.alienColor === 'green') {
+            console.log("Congratulations! You just earned 5 points for shooting the alien.");
+        } else {
+            console.log("Congratulations! You just earned 10 points.");
+        }
+    })
+    .catch(error => {
+        console.error('Error occurred:', error);
+    });
+
+------------------------------------------------------------------------------------------------------------
+only for reading purpose:
+output look like this:
+? Select the alien color: any other        
+Congratulations! You just earned 10 points.
