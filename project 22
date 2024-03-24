@@ -1,0 +1,25 @@
+Intentional Error: If you haven’t received an array index error in one of your programs yet,
+try to make one happen. Change an index in one of your programs
+to produce an index error. Make sure you correct the error before closing the program.
+
+
+
+solution:
+code
+
+// Define an array
+let numbers: number[] = [1, 2, 3, 4, 5];
+
+// Intentional error: Accessing an element at an index that is out of bounds
+console.log(numbers[10]); // This line will produce an index error because the array has only 5 elements
+
+// Correcting the error
+console.log("All elements of the array:", numbers); // Printing the array to ensure the error is corrected
+
+
+-------------------------------------------------------------------------------------------
+only for reading purpose 
+output look like this:
+
+undefined
+All elements of the array: [ 1, 2, 3, 4, 5 ]
