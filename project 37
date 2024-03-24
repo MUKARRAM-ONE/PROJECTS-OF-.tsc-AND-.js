@@ -1,0 +1,32 @@
+Large Shirts: Modify the make_shirt() function so that shirts are large
+by default with a message that reads I love TypeScript. Make a large shirt and a
+medium shirt with the default message, and a shirt of any size with a different
+message.
+
+solution 
+code
+
+// Define the make_shirt function with default parameters
+function make_shirt(size: string = 'large', message: string = 'I love TypeScript'): void {
+    // Print a sentence summarizing the size of the shirt and the message printed on it
+    console.log(`The shirt size is ${size.toUpperCase()} and the message printed on it is: "${message}".`);
+}
+
+// Call the function to make a large shirt with the default message
+make_shirt();
+
+// Call the function to make a medium shirt with the default message
+make_shirt('medium');
+
+// Call the function to make a shirt of any size with a different message
+make_shirt('small', 'Hello, World!');
+
+
+------------------------------------------------------------------------------------------
+
+only for reading purpose
+output look like this
+The shirt size is LARGE and the message printed on it is: "I love TypeScript".
+The shirt size is MEDIUM and the message printed on it is: "I love TypeScript".
+The shirt size is SMALL and the message printed on it is: "Hello, World!".     
+
