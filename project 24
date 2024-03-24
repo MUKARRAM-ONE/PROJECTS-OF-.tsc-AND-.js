@@ -1,0 +1,101 @@
+ More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
+
+• Tests for equality and inequality with strings
+
+• Tests using the lower case function
+
+• Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+
+• Tests using "and" and "or" operators
+
+• Test whether an item is in a array
+
+• Test whether an item is not in a array
+
+solution:
+code
+
+// Tests for equality and inequality with strings
+let fruit1: string = 'apple';
+let fruit2: string = 'banana';
+console.log("Test for equality with strings: Is 'apple' equal to 'banana'? I predict false.");
+console.log(fruit1 == fruit2); // False
+
+console.log("Test for inequality with strings: Is 'apple' not equal to 'banana'? I predict true.");
+console.log(fruit1 != fruit2); // True
+
+// Tests using the lower case function
+let word: string = 'HELLO';
+console.log("Test using the lower case function: Is 'HELLO' equal to 'hello'? I predict true.");
+console.log(word.toLowerCase() == 'hello'); // True
+
+// Numerical tests
+let num1: number = 10;
+let num2: number = 5;
+console.log("Test for equality with numbers: Is 10 equal to 5? I predict false.");
+console.log(num1 == num2); // False
+
+console.log("Test for inequality with numbers: Is 10 not equal to 5? I predict true.");
+console.log(num1 != num2); // True
+
+console.log("Test for greater than with numbers: Is 10 greater than 5? I predict true.");
+console.log(num1 > num2); // True
+
+console.log("Test for less than with numbers: Is 10 less than 5? I predict false.");
+console.log(num1 < num2); // False
+
+console.log("Test for greater than or equal to with numbers: Is 10 greater than or equal to 5? I predict true.");
+console.log(num1 >= num2); // True
+
+console.log("Test for less than or equal to with numbers: Is 10 less than or equal to 5? I predict false.");
+console.log(num1 <= num2); // False
+
+// Tests using "and" and "or" operators
+let x: number = 10;
+let y: number = 5;
+let z: number = 20;
+console.log("Test using 'and' operator: Is x > y and x < z? I predict true.");
+console.log(x > y && x < z); // True
+
+console.log("Test using 'or' operator: Is x > y or x < z? I predict true.");
+console.log(x > y || x < z); // True
+
+// Test whether an item is in an array
+let fruits: string[] = ['apple', 'banana', 'orange', 'grape'];
+console.log("Test whether 'banana' is in the array: I predict true.");
+console.log(fruits.includes('banana')); // True
+
+// Test whether an item is not in an array
+console.log("Test whether 'watermelon' is not in the array: I predict true.");
+console.log(!fruits.includes('watermelon')); // True
+
+----------------------------------------------------------------------------------------------------
+only for reading purpose 
+Output look like this:
+
+Test for equality with strings: Is 'apple' equal to 'banana'? I predict false.
+false
+Test for inequality with strings: Is 'apple' not equal to 'banana'? I predict true.
+true
+Test using the lower case function: Is 'HELLO' equal to 'hello'? I predict true.   
+true
+Test for equality with numbers: Is 10 equal to 5? I predict false.
+false
+Test for inequality with numbers: Is 10 not equal to 5? I predict true.
+true
+Test for greater than with numbers: Is 10 greater than 5? I predict true.
+true
+Test for less than with numbers: Is 10 less than 5? I predict false.
+false
+Test for greater than or equal to with numbers: Is 10 greater than or equal to 5? I predict true.
+true
+Test for less than or equal to with numbers: Is 10 less than or equal to 5? I predict false.
+false
+Test using 'and' operator: Is x > y and x < z? I predict true.
+true
+Test using 'or' operator: Is x > y or x < z? I predict true.
+true
+Test whether 'banana' is in the array: I predict true.
+true
+Test whether 'watermelon' is not in the array: I predict true.
+true
