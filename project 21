@@ -1,0 +1,49 @@
+They think of something you could store in a TypeScript Object.
+Write a program that creates Objects containing these items.
+
+
+Solution: 
+code
+// Define an interface for a car
+interface Car {
+    compnay: string;
+    model: string;
+    year: number;
+    color: string;
+}
+
+// Create objects representing different cars
+let car1: Car = {
+    compnay: "Toyota",
+    model: "Camry",
+    year: 2020,
+    color: "Silver"
+};
+
+let car2: Car = {
+    compnay: "Honda",
+    model: "Accord",
+    year: 2018,
+    color: "Black"
+};
+
+let car3: Car = {
+    compnay: "Ford",
+    model: "Mustang",
+    year: 2021,
+    color: "Red"
+};
+
+// Print information about each car
+console.log("Car 1:", car1);
+console.log("Car 2:", car2);
+console.log("Car 3:", car3);
+
+
+------------------------------------------------------------------------------------------------------------
+only for reading purpose:
+Out put look like this:
+
+Car 1: { compnay: 'Toyota', model: 'Camry', year: 2020, color: 'Silver' }
+Car 2: { compnay: 'Honda', model: 'Accord', year: 2018, color: 'Black' }
+Car 3: { compnay: 'Ford', model: 'Mustang', year: 2021, color: 'Red' }  
