@@ -1,0 +1,42 @@
+
+
+
+Solution:
+code
+
+// Import the inquirer module
+import inquirer from 'inquirer';
+
+// Define questions for the user
+const questions = [
+    {
+        type: 'list',
+        name: 'alienColor',
+        message: 'Select the alien color:',
+        choices: ['green', 'yellow', 'red']
+    }
+];
+
+// Use inquirer to prompt the user for input
+inquirer.prompt(questions)
+    .then(answers => {
+        // Check if the alien's color is red
+        if (answers.alienColor === 'green') {
+            console.log("Congratulations! You just earned 5 points.");
+        } else if (answers.alienColor === 'yellow') {
+            console.log("Congratulations! You just earned 10 points.");
+        } else {
+            console.log("Congratulations! You just earned 15 points.");
+        }
+    })
+    .catch(error => {
+        console.error('Error occurred:', error);
+    });
+
+
+    ----------------------------------------------------------------------------------------
+    only for reading purpose:
+    out put look like this
+//choose any color in above options provide the required points
+    ? Select the alien color: red
+Congratulations! You just earned 15 points.
