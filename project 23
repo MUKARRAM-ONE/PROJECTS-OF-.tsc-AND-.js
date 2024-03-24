@@ -1,0 +1,84 @@
+Conditional Tests: Write a series of conditional tests. Print a statement
+describing each test and your prediction for the results of each test. Your code
+should look something like this:
+
+let car = 'subaru';
+
+console.log("Is car == 'subaru'? I predict True.")
+
+console.log(car == 'subaru')
+
+• Look closely at your results, and make sure you understand why each line evaluates to True or False.
+
+• Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
+
+
+Solution:
+code
+
+\// Test 1: Is the number 10 greater than 5?
+console.log("Is 10 greater than 5? I predict true.");
+console.log(10 > 5); // True
+
+// Test 2: Is the string 'hello' equal to 'Hello'?
+console.log("Is 'hello' equal to 'Hello'? I predict false.");
+console.log('hello' == 'Hello'); // False
+
+// Test 3: Is the number 7 less than or equal to 7?
+console.log("Is 7 less than or equal to 7? I predict true.");
+console.log(7 <= 7); // True
+
+// Test 4: Is the boolean value true equal to 1?
+console.log("Is true equal to 1? I predict false.");
+console.log(true == 1); // False
+
+// Test 5: Is the string 'apple' not equal to 'orange'?
+console.log("Is 'apple' not equal to 'orange'? I predict true.");
+console.log('apple' != 'orange'); // True
+
+// Test 6: Is the string 'cat' equal to 'dog'?
+console.log("Is 'cat' equal to 'dog'? I predict false.");
+console.log('cat' == 'dog'); // False
+
+// Test 7: Is the number 3 greater than 10?
+console.log("Is 3 greater than 10? I predict false.");
+console.log(3 > 10); // False
+
+// Test 8: Is the length of the string 'elephant' equal to 8?
+console.log("Is the length of 'elephant' equal to 8? I predict true.");
+console.log('elephant'.length == 8); // True
+
+// Test 9: Is the result of 6 * 2 equal to 12?
+console.log("Is 6 * 2 equal to 12? I predict true.");
+console.log(6 * 2 == 12); // True
+
+// Test 10: Is the number -5 less than 0?
+console.log("Is -5 less than 0? I predict true.");
+console.log(-5 < 0); // True
+
+
+----------------------------------------------------------------------------------------------------
+
+only for reading purpose:
+out put look like this:
+
+Is 10 greater than 5? I predict true.
+true
+Is 'hello' equal to 'Hello'? I predict false.    
+false
+Is 7 less than or equal to 7? I predict true.    
+true
+Is true equal to 1? I predict false.
+true
+Is 'apple' not equal to 'orange'? I predict true.
+true
+Is 'cat' equal to 'dog'? I predict false.
+false
+Is 3 greater than 10? I predict false.
+false
+Is the length of 'elephant' equal to 8? I predict true.
+true
+Is 6 * 2 equal to 12? I predict true.
+true
+Is -5 less than 0? I predict true.
+true
