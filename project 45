@@ -1,0 +1,49 @@
+Question 45
+Cars: Write a function that stores information about a car in a Object.
+The function should always receive a manufacturer and a model name. It
+should then accept an arbitrary number of keyword arguments. Call the function
+with the required information and two other name-value pairs, such as a
+color or an optional feature. 
+Print the Object that’s returned to make sure all the information was
+stored correctly.
+
+Solution:
+code
+
+// Define the function to store information about a car
+function storeCarInfo(manufacturer: string, modelName: string, ...details: { [key: string]: any }[]): { manufacturer: string, modelName: string, details: { [key: string]: any } } {
+    // Create an Object to store car information
+    let carInfo = {
+        manufacturer: manufacturer,
+        modelName: modelName,
+        details: {}
+    };
+
+    // Add additional details to the car information Object
+    details.forEach(detail => {
+        const key = Object.keys(detail)[0];
+        carInfo.details[key] = detail[key];
+    });
+
+    // Return the car information Object
+    return carInfo;
+}
+
+// Call the function with required information and additional details
+let car = storeCarInfo('Toyota', 'Camry', { color: 'red' }, { year: 2022 });
+
+// Print the Object to make sure all information was stored correctly
+console.log(car);
+
+
+
+--------------------------------------------------------------------------------------------------
+only for reading purpose:
+out put look like this:
+
+{
+  manufacturer: 'Toyota',
+  modelName: 'Camry',
+  details: { color: 'red', year: 2022 }
+
+  
