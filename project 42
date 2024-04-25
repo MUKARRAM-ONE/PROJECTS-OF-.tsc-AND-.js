@@ -1,0 +1,48 @@
+Question 42
+Great Magicians: Start with a copy of your program from Exercise 39.
+Write a function called make_great() that modifies the array of magicians by adding
+the phrase the Great to each magician’s name. Call show_magicians() to
+see that the list has actually been modified.
+
+
+
+solution:
+
+code
+
+
+// Define the show_magicians function
+function show_magicians(magicians: string[]): void {
+    // Loop through the array of magician's names and print each name
+    magicians.forEach(magician => {
+        console.log(magician);
+    });
+}
+
+// Define the make_great function
+function make_great(magicians: string[]): void {
+    // Modify each magician's name by adding "the Great"
+    for (let i = 0; i < magicians.length; i++) {
+        magicians[i] = `the Great ${magicians[i]}`;
+    }
+}
+
+// Create an array of magician's names
+let magicians: string[] = ['David Copperfield', 'Harry Houdini', 'Penn & Teller', 'Derren Brown'];
+
+// Call the make_great function to modify the array of magicians
+make_great(magicians);
+
+// Call the function to show the modified list of magician's names
+show_magicians(magicians);
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+only for study purpose:
+Output look like this:
+
+the Great David Copperfield
+the Great Harry Houdini
+the Great Penn & Teller
+the Great Derren Brown 
+
